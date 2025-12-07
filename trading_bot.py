@@ -1,3 +1,4 @@
+import os
 import discord
 from discord.ext import commands
 import re
@@ -1276,4 +1277,5 @@ async def commands_list(ctx):
 
 # Run the bot
 # REPLACE 'YOUR_BOT_TOKEN_HERE' with your actual bot token
-bot.run('MTQ0Njk0NjY1MDk5NTI5ODMzNQ.GihEO4.D40rqIFPoFp0dhzOagyRCHxaiT4l069cM7-TGY')
+
+bot.run(os.getenv("DISCORD_TOKEN"))
